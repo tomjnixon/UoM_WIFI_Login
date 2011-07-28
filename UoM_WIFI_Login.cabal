@@ -1,0 +1,18 @@
+Name:                UoMWIFILogin
+Version:             0.1
+Synopsis:            Automatically bypass the UoM_WIFI login page.
+Description:         Automatically bypass the UoM_WIFI login page.
+Homepage:            https://github.com/tomjnixon/UoM_WIFI_Login
+License:             MIT
+License-file:        LICENSE
+Author:              Tom Nixon
+Maintainer:          tom@tomn.co.uk
+Category:            Network
+
+Build-type:          Simple
+Cabal-version:       >=1.4
+
+
+Executable wifi_login
+  Main-is: WifiLogin.hs
+  Build-depends: base < 5, haskell98, network-info, shpider

@@ -1,0 +1,26 @@
+You will need at least (there may be others):
+
+	- ghc
+	- cabal-install
+
+To install to your local bin folder, run in theis directory:
+
+	$ cabal install --prefix=$HOME --user
+
+This should automatically pull in the rest of the dependencies.
+
+Create a credentials file somewhere with the following format:
+
+	Credentials
+		{ user = "your_user_name"
+		, password = "your_password"
+		}
+
+Then, to authenticate run:
+
+	$ wifi_login path_to_credfile wlan0
+
+where wlan0 is the interface you've connected with.
+
+This can be easily ran from wicd or networkmanager with scripts
+that I'll publish when I get round to it...
