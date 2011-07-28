@@ -3,7 +3,7 @@ You will need at least (there may be others):
 	- ghc
 	- cabal-install
 
-To install to your local bin folder, run in theis directory:
+To install to your local bin folder, run in this directory:
 
 	$ cabal install --prefix=$HOME --user
 
